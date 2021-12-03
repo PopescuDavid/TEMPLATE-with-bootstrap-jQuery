@@ -1,0 +1,132 @@
+*{
+    font-family: 'Zilla Slab', serif;
+    margin:0px;
+}
+
+body{
+    background: url('images/background.png') no-repeat center fixed;     
+    background-image: linear-gradient(to bottom, rgba(9, 45, 48, 0.6) 0%,rgba(7, 45, 48, 0.6) 100%), url("images/background.png");
+}
+
+
+.navbar-nav li a{
+    color:white;
+    padding:25px;
+    font-size:16px;
+    text-indent: 30px;
+    
+}
+
+.navbar-nav li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav li a:hover{
+    color:orange;
+}
+
+.navbar-toggler .navbar-toggler-icon{
+    color:white;
+}
+
+.first-section{
+    position: relative;
+    text-align: center;
+    margin-left:20%;
+    margin-right:20%;
+    margin-bottom: 10%;
+    top:300px;
+}
+
+.title .small-text{
+    color:#FF811F;
+}
+
+.title span{
+    color:white;
+    position:relative;
+    font-size:45px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.title .buttons{
+    position: relative;
+    top:40px;
+}
+
+.buttons button{
+    cursor: pointer;
+    color:white;
+    border:2px solid #FF811F;
+    padding:15px 15px 15px 15px;
+    background-color: transparent;
+    border-radius: 20px;
+    margin:5px;
+}
+
+.buttons button a{
+    text-decoration: none;
+    color:white;
+}
+
+button:hover{
+    background-color:#FF811F;
+    color:white;
+}
+
+.small-text{
+    position: relative;
+    top:-25px;
+    font-size:20px;
+}
+
+@media screen and (max-width:750px)
+{
+    .title span{
+        color:white;
+        position:relative;
+        font-size:30px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .title .buttons{
+        position: relative;
+        top:40px;
+    }
+    .title .small-text{
+        color:#FF811F;
+        font-size:16px;
+    }
+}
+@media screen and (max-width:575px)
+{
+
+    .title span{
+        color:white;
+        position:relative;
+        font-size:30px;
+        top:-150px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .title .buttons{
+        position: relative;
+        top:-110px;
+    }
+    .title .small-text{
+        color:#FF811F;
+        font-size:16px;
+        position: relative;
+        top:-170px;
+    }
+    .navbar-nav li a{
+        color:white;
+        padding:15px;
+        font-size:15px;
+
+        
+    }
+}
