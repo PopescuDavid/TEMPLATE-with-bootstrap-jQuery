@@ -3,9 +3,10 @@
     margin:0px;
 }
 
-body{
+header{
     background: url('images/background.png') no-repeat center fixed;     
     background-image: linear-gradient(to bottom, rgba(9, 45, 48, 0.6) 0%,rgba(7, 45, 48, 0.6) 100%), url("images/background.png");
+    height:100vh;
 }
 
 
@@ -34,10 +35,16 @@ body{
 .first-section{
     position: relative;
     text-align: center;
-    margin-left:20%;
-    margin-right:20%;
-    margin-bottom: 10%;
-    top:300px;
+    height:700px;
+    top:10px;
+}
+
+.title{
+    position: absolute;
+    text-align: center;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
 }
 
 .title .small-text{
@@ -46,8 +53,8 @@ body{
 
 .title span{
     color:white;
-    position:relative;
     font-size:45px;
+    text-align: center;
     font-weight: bold;
     font-style: italic;
 }
@@ -83,6 +90,11 @@ button:hover{
     font-size:20px;
 }
 
+section{
+    height:100vh;
+    margin-top: 3%;
+}
+
 @media screen and (max-width:750px)
 {
     .title span{
@@ -100,10 +112,20 @@ button:hover{
         color:#FF811F;
         font-size:16px;
     }
+    .navbar-nav li a{
+        color:white;
+        padding:25px;
+        font-size:14px;
+        text-indent: 20px;
+    }
+    .nav-item a img{
+        height:20px;
+        width:20px;
+        margin-left:-15px;
+    }
 }
 @media screen and (max-width:575px)
 {
-
     .title span{
         color:white;
         position:relative;
@@ -129,4 +151,53 @@ button:hover{
 
         
     }
+    .collapse navbar-collapse ul{
+        display: inherit;
+    }
+}
+@media screen and (max-width:602px)
+{
+    .nav-item a img{
+        height:20px;
+        width:20px;
+        margin-left:-20px;
+    }
+}
+
+@media screen and (max-width:768px)
+{
+  .padding-top{
+    padding-top: 8px;
+  }
+  .col-sm-4{
+    display: inline-block;
+  }
+}
+@media screen and (min-width:767px)
+{
+  .padding-top{
+    padding-top: 7px;
+  }
+}
+@media screen and (max-width:252px)
+{
+
+  .col-xs-4{
+    margin-left: 80px;
+    margin-right:50px;
+  }
+  .col-xs-8{
+    margin-left: 55px;
+    margin-right:50px;
+  }
+}
+
+@media screen and (min-width:992px)
+{
+  .col-xs-8{
+    width:150.9px;
+  }
+  .padding-top{
+    padding-top: 11px;
+  }
 }
