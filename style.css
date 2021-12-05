@@ -1,6 +1,11 @@
 *{
     font-family: 'Zilla Slab', serif;
-    margin:0px;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 header{
@@ -38,6 +43,7 @@ header{
     height:700px;
     top:10px;
 }
+
 
 .title{
     position: absolute;
@@ -95,6 +101,93 @@ section{
     margin-top: 3%;
 }
 
+.shipping-text span{
+    font-weight: bold;
+}
+
+.shipping-text span:hover{
+    color:#FF811F;
+    cursor:pointer;
+}
+
+.second-section{
+    height:300px;
+    position: relative;
+    text-align: center;
+    top:-25px;
+}
+
+.second-section .products-title{
+    position: absolute;
+    left:50%;
+    top:43%;
+    transform:translate(-50%,-50%);
+    font-size:40px;
+    font-weight: bold;
+}
+.products-title span{
+    color:#FF811F;
+}
+.second-section hr{
+    position: absolute;
+    left:50%;
+    top:50%;
+    background:#FF811F;
+    width:100px;
+    height:2px;
+    border:none;
+    border-radius: 50px;
+    transform:translate(-50%,-50%);
+}
+
+.second-section .text-paragraph{
+    position: absolute;
+    left:50%;
+    top:75%;
+    transform:translate(-50%,-50%);
+    font-size:21px;
+}
+
+#products{
+    position: relative;
+    text-align: center;
+    top:-120px;
+}
+
+.product-text span{
+    font-weight: bold;
+    font-size:25px;
+}
+
+.product-text span:hover{
+    color:#FF811F;
+    cursor:pointer;
+}
+
+.add-to-cart-buttons{
+    padding-right: 45px;
+}
+
+.add-to-cart-buttons button{
+    background-color:#FF811F;
+    border: none;
+    color:white;
+    padding:15px;
+    border-radius: 25px;
+    font-size:13px;
+    font-weight: bold;
+}
+
+.add-to-cart-buttons button:hover{
+    background:#FF994A ;
+    cursor: pointer;
+}
+
+.add-to-cart-buttons img{
+    margin-right: 15px;
+}
+
+
 @media screen and (max-width:750px)
 {
     .title span{
@@ -130,33 +223,56 @@ section{
         color:white;
         position:relative;
         font-size:30px;
-        top:-150px;
+        top:-90px;
         font-weight: bold;
         font-style: italic;
     }
+
     .title .buttons{
         position: relative;
-        top:-110px;
+        top:-50px;
     }
+
     .title .small-text{
         color:#FF811F;
         font-size:16px;
         position: relative;
-        top:-170px;
+        top:-100px;
     }
+
     .navbar-nav li a{
         color:white;
         padding:15px;
         font-size:15px;
-
-        
     }
+
     .collapse navbar-collapse ul{
         display: inherit;
+    }
+
+    .img-responsive{
+        padding-left:50px;
+    }
+
+    .shipping-text{
+        padding-left:20px;
+    }
+    .product-images{
+        padding-right: 300px;
+        padding-top:35px;
+    }
+    .product-text{
+        padding-right: 10px;
+        padding-top:35px;
+    }
+    .add-to-cart-buttons{
+        padding-left: 80px;
+        padding-top:15px;
     }
 }
 @media screen and (max-width:602px)
 {
+    
     .nav-item a img{
         height:20px;
         width:20px;
@@ -164,40 +280,154 @@ section{
     }
 }
 
-@media screen and (max-width:768px)
+@media screen and (max-width:767px)
 {
-  .padding-top{
-    padding-top: 8px;
-  }
-  .col-sm-4{
-    display: inline-block;
-  }
-}
-@media screen and (min-width:767px)
-{
-  .padding-top{
-    padding-top: 7px;
-  }
-}
-@media screen and (max-width:252px)
-{
+    .padding-top{
+        padding-top: 10px;
+    }
+    .second-section .text-paragraph{
+        font-size:17px;
+    }
 
-  .col-xs-4{
-    margin-left: 80px;
-    margin-right:50px;
-  }
-  .col-xs-8{
-    margin-left: 55px;
-    margin-right:50px;
-  }
+    .second-section{
+        top:-6%;
+        left:3%;
+    }
+    .shipping-text{
+        padding-left:20px;
+    }
+
+    .product-images{
+        padding-left: 80px;
+    }
+    .product-text{
+        padding-left: 80px;
+    }
+    .add-to-cart-buttons{
+        padding-left: 80px;
+    }
 }
 
-@media screen and (min-width:992px)
+@media screen and (max-width:575px)
 {
-  .col-xs-8{
-    width:150.9px;
-  }
-  .padding-top{
-    padding-top: 11px;
-  }
+    .second-section .products-title{
+        font-size:30px;
+    }
+
+    .second-section .text-paragraph{
+        font-size:15.5px;
+    }
+
+    .second-section{
+        left:5%;
+    }
+    .second-section hr{
+        top:47%;
+        width:70px;
+    }
+    .product-images{
+        margin-right:0;
+        padding:0;
+    }
+    .product-text span{
+        font-size:20px;
+    }
+    .add-to-cart-buttons button{
+        background-color:#FF811F;
+        border: none;
+        color:white;
+        padding:15px;
+        border-radius: 25px;
+        font-size:10px;
+        font-weight: bold;
+    }
 }
+
+@media screen and (max-width:396px)
+{
+    .title .buttons{
+        top:-70px;
+    }
+}
+
+@media screen and (max-width:364px)
+{
+    .second-section .products-title{
+        font-size:23px;
+    }
+
+    .second-section .text-paragraph{
+        font-size:14px;
+    }
+
+    .second-section{
+        left:5%;
+    }
+    .second-section hr{
+        top:47%;
+        width:50px;
+    }
+}
+
+@media screen and (max-width:274px)
+{
+    .title span{
+
+        top:-110px;
+
+    }
+
+    .title .buttons{
+
+        top:-90px;
+    }
+
+    .title .small-text{
+
+        top:-140px;
+    }
+}
+
+@media screen and (max-width:268px)
+{
+    .shipping-text{
+        font-size:16px;
+        float:none;
+        display: block;
+    }
+    .second-section .products-title{
+        font-size:18px;
+    }
+
+    .second-section .text-paragraph{
+        font-size:14px;
+    }
+
+    .second-section{
+        left:5%;
+    }
+    .second-section hr{
+        top:47%;
+        width:50px;
+    }
+}
+
+@media screen and (max-width:991px)
+{
+    .product-images img{
+        padding-right: 40px;
+        width:250px;
+        height:200px;
+    }
+    .second-section{
+        top:-10%;
+    }
+}
+
+@media screen and (max-width:1326px)
+{
+    .second-section{
+        top:-10%;
+    }
+}
+
