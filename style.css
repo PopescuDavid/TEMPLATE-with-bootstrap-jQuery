@@ -11,7 +11,7 @@ html{
 header{
     background: url('images/background.png') no-repeat center fixed;     
     background-image: linear-gradient(to bottom, rgba(9, 45, 48, 0.6) 0%,rgba(7, 45, 48, 0.6) 100%), url("images/background.png");
-    height:100vh;
+    height:970px;
 }
 
 
@@ -185,6 +185,24 @@ section{
 
 .add-to-cart-buttons img{
     margin-right: 15px;
+}
+
+#products{
+    -webkit-box-shadow: 1px 6px 0px -1px rgba(0,0,0,0.12);
+-moz-box-shadow: 1px 6px 0px -1px rgba(0,0,0,0.12);
+box-shadow: 1px 6px 0px -1px rgba(0,0,0,0.12);
+}
+
+.products-box-shadow-1{
+    -webkit-box-shadow: 6px 1px 0px -1px rgba(0,0,0,0.12);
+-moz-box-shadow: 6px 1px 0px -1px rgba(0,0,0,0.12);
+box-shadow: 6px 1px 0px -1px rgba(0,0,0,0.12)
+}
+
+.products-box-shadow-2{
+    -webkit-box-shadow: 6px 1px 0px -1px rgba(0,0,0,0.12);
+-moz-box-shadow: 6px 1px 0px -1px rgba(0,0,0,0.12);
+box-shadow: 6px 1px 0px -1px rgba(0,0,0,0.12)
 }
 
 
