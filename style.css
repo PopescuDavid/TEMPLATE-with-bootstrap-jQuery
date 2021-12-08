@@ -20,20 +20,25 @@ header{
     padding:25px;
     font-size:16px;
     text-indent: 30px;
-    
 }
 
-.navbar-nav li{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.toggle-background{
+    background: #254739  ;
+    border-bottom: 0.5px solid black;
+    border-radius: 5px;
+    opacity: 80%;
+    font-style: italic;
+}
+
+.navbar-nav li #buttons{
+    padding-left: 20px;
 }
 
 .navbar-nav li a:hover{
     color:orange;
 }
 
-.navbar-toggler .navbar-toggler-icon{
+.navbar-toggler #toggle-btn{
     color:white;
 }
 
@@ -188,21 +193,24 @@ section{
 }
 
 #products{
-    -webkit-box-shadow: 1px 6px 0px -1px rgba(0,0,0,0.12);
--moz-box-shadow: 1px 6px 0px -1px rgba(0,0,0,0.12);
-box-shadow: 1px 6px 0px -1px rgba(0,0,0,0.12);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(217,217,217,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(217,217,217,1);
+    box-shadow: 20px 30px 50px 5px rgba(217,217,217,1);
+    
 }
 
 .products-box-shadow-1{
-    -webkit-box-shadow: 6px 1px 0px -1px rgba(0,0,0,0.12);
--moz-box-shadow: 6px 1px 0px -1px rgba(0,0,0,0.12);
-box-shadow: 6px 1px 0px -1px rgba(0,0,0,0.12)
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(217,217,217,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(217,217,217,1);
+    box-shadow: 10px 10px 20px 0px rgba(217,217,217,1);
+    
 }
 
 .products-box-shadow-2{
-    -webkit-box-shadow: 6px 1px 0px -1px rgba(0,0,0,0.12);
--moz-box-shadow: 6px 1px 0px -1px rgba(0,0,0,0.12);
-box-shadow: 6px 1px 0px -1px rgba(0,0,0,0.12)
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(217,217,217,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(217,217,217,1);
+    box-shadow: 10px 10px 20px 0px rgba(217,217,217,1);
+    
 }
 
 
