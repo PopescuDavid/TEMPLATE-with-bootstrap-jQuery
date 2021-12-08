@@ -14,6 +14,10 @@ header{
     height:970px;
 }
 
+.navbar-nav .nav-item a:hover{
+    color:#FF994A;
+    transition: 0.25s;
+}
 
 .navbar-nav li a{
     color:white;
@@ -51,7 +55,6 @@ header{
     height:700px;
     top:10px;
 }
-
 
 .title{
     position: absolute;
@@ -109,7 +112,6 @@ section{
     margin-top: 3%;
 }
 
-
 .shipping-text span{
     font-weight: bold;
 }
@@ -134,9 +136,11 @@ section{
     font-size:40px;
     font-weight: bold;
 }
+
 .products-title span{
     color:#FF811F;
 }
+
 .second-section hr{
     position: absolute;
     left:50%;
@@ -244,7 +248,6 @@ ul .navbar-nav{
     color:#FF994A;
     border:none;
 }
-
 
 .navbar-nav #pages #pages-button button i{
     padding-left: 200px;
@@ -357,7 +360,6 @@ ul .navbar-nav{
         margin-left:-20px;
     }
 }
-
 @media screen and (max-width:767px)
 {
     .padding-top{
@@ -385,7 +387,6 @@ ul .navbar-nav{
         padding-left: 80px;
     }
 }
-
 @media screen and (max-width:575px)
 {
     .buttons button{
@@ -439,14 +440,12 @@ ul .navbar-nav{
         font-weight: bold;
     }
 }
-
 @media screen and (max-width:396px)
 {
     .title .buttons{
         top:-70px;
     }
 }
-
 @media screen and (max-width:364px)
 {
     .second-section .products-title{
@@ -465,7 +464,6 @@ ul .navbar-nav{
         width:50px;
     }
 }
-
 @media screen and (max-width:274px)
 {
     .title span{
@@ -484,7 +482,6 @@ ul .navbar-nav{
         top:-140px;
     }
 }
-
 @media screen and (max-width:268px)
 {
     .shipping-text{
@@ -508,7 +505,6 @@ ul .navbar-nav{
         width:50px;
     }
 }
-
 @media screen and (max-width:991px)
 {
     .product-images img{
@@ -520,7 +516,6 @@ ul .navbar-nav{
         top:-10%;
     }
 }
-
 @media screen and (max-width:1326px)
 {
     .second-section{
